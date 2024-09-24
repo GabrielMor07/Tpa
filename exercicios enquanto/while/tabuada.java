@@ -1,33 +1,25 @@
-package exercicios;
+package exercicio;
+
+import java.util.Scanner;
 
 public class tabuada {
-	public static void main(String[] args) {
-		int  i = 1, m , r ;
-	
-		
-		while(i<=10) {
-		
-			m = 1;
-			
-			r = 1;
-			
-			System.out.println( );
-			
-			System.out.println(" Número da tabuada atual: " + i + " .");
-			
-			System.out.println( );
-		
-			while(m<=10) {
-				
-				r = i * m;
-				
-			System.out.println( i + " X " + m + " = " + r);
-			
-			r++;
-			m++;
-			}
-			i++;
 
-		}	
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int r, n, i = 1;
+		
+		System.out.println("Insira o numero: ");
+		n = ler.nextInt();
+		
+		while (i<11) {
+			r = n * i;
+			System.out.println( r );
+			
+			i++;
+			}
+		ler.close();
+	
 	}
+
 }
